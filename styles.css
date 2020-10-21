@@ -1,0 +1,42 @@
+.imgG {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+body {
+  font-family: Verdana,Arial,sans-serif;
+}
+
+#text {
+  color: #6c757d;
+  margin: 30px;
+  padding: 10px;
+  background-color: #343a40;
+  text-align: left;
+  height: 225px;
+}
+
+#text:hover {
+  color: white;
+  margin: 30px;
+  padding: 10px;
+  background-color: #343a40;
+}
+
+.navbar .navbar-brand {
+  font-size: 30px !important;
+}
+
+.navbar {
+  font-size: 24px !important;
+  opacity: .95;
+}
+
+#link {
+  color: #6c757d;
+}
+
+#link:hover {
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */

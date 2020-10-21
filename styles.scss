@@ -1,0 +1,50 @@
+$darkGray: #343a40;
+$lightGray: #6c757d;
+
+
+.imgG{
+    margin-right: 10px;
+    margin-bottom: 20px;  
+    
+}
+
+
+
+body{
+	font-family:Verdana,Arial,sans-serif;
+}
+ 
+#text{
+	color: $lightGray;
+	margin:30px;
+	padding:10px;
+    background-color: $darkGray;
+    text-align:left;
+    height:225px;
+}
+
+#text:hover{
+	color:white;
+	margin:30px;
+	padding:10px;
+	background-color: $darkGray;
+}
+
+.navbar .navbar-brand{
+	font-size: 30px !important;
+}
+
+.navbar{
+	font-size: 24px !important;
+	opacity:.95;
+}
+
+
+#link{
+	color: $lightGray;
+}
+
+#link:hover{
+	color:white;
+}
+
