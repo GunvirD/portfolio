@@ -1,6 +1,13 @@
-.imgG {
+.imgGleft {
   margin-right: 10px;
   margin-bottom: 20px;
+  float: left;
+}
+
+.imgGright {
+  margin-right: 10px;
+  margin-bottom: 20px;
+  float: right;
 }
 
 body {
@@ -13,7 +20,7 @@ body {
   padding: 10px;
   background-color: #343a40;
   text-align: left;
-  height: 225px;
+  height: 220px;
 }
 
 #text:hover {
@@ -33,10 +40,33 @@ body {
 }
 
 #link {
-  color: #6c757d;
+  color: lightblue;
 }
 
 #link:hover {
-  color: white;
+  color: deepskyblue;
+}
+
+.txtInput {
+  width: 300px;
+  text-align: center;
+  margin-left: 510px;
+  color: #6c757d;
+  background-color: #343a40;
+}
+
+.txtInput:hover {
+  color: lightblue;
+}
+
+.searchBtn {
+  color: #6c757d;
+  background-color: #343a40;
+  -webkit-margin-after: 50%;
+          margin-block-end: 50%;
+}
+
+.searchBtn:hover {
+  color: lightblue;
 }
 /*# sourceMappingURL=styles.css.map */

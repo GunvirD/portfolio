@@ -2,12 +2,19 @@ $darkGray: #343a40;
 $lightGray: #6c757d;
 
 
-.imgG{
+.imgGleft{
     margin-right: 10px;
     margin-bottom: 20px;  
-    
+    float: left;
 }
 
+
+
+.imgGright{
+    margin-right: 10px;
+    margin-bottom: 20px;  
+    float: right;
+}
 
 
 body{
@@ -20,7 +27,7 @@ body{
 	padding:10px;
     background-color: $darkGray;
     text-align:left;
-    height:225px;
+    height:220px;
 }
 
 #text:hover{
@@ -41,10 +48,44 @@ body{
 
 
 #link{
-	color: $lightGray;
+	color: lightblue;
 }
 
 #link:hover{
-	color:white;
+	color:deepskyblue;
 }
 
+
+
+
+
+
+
+.txtInput{
+    width: 300px;
+    text-align: center;
+    margin-left: 510px;
+    color: $lightGray;
+    background-color: $darkGray;
+}
+
+.txtInput:hover{
+    color: lightblue;
+}
+
+
+
+
+
+
+
+.searchBtn{
+    color: $lightGray;
+    background-color: $darkGray;
+    margin-block-end: 50%;
+}
+
+
+.searchBtn:hover{
+    color: lightblue;
+}
