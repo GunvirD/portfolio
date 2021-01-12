@@ -1,81 +1,56 @@
 <!DOCTYPE html>
-
+<html lang="eng">
 <html>
-	<head>
-		<title> Main Page </title>
-		<link rel="stylesheet" href="styles.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-	</head>
-
-	<body style="background-color: #3E4F52;">
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
-			<a href="file:///Users/gunvirdhesi/portfolio/index.html" class="navbar-brand">
-				Main
-			</a>
+  <head>
+    <meta charset = "UTF-8">
+    <meta name="description" content="This is Gunvir's Portfolio, in which you can find everything about Gunvir's background.">
+    <meta name="keyword" content="Gunvir, Dhesi, Gunvir Dhesi, Portfolio, Gunvir Dhesi youtube">
+    <meta name="author" content="Gunvir Dhesi">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Home Page</title>
+  </head>
 
 
-			<div class="collapse navbar-collapse">
-				<ul class="navbar-nav mr-auto">
+  <body>
+    <nav>
+        <!-- Div is a diver -->
+        <div class="logo">
+          <h4>Gunvir's Portfolio</h4>
+        </div>
 
-					<li class="nav-item">
-						<a href="#" class="nav-link">
-							Education
-						</a>
-					</li>
+        <!-- BEGINING OF UL-->
+        <!-- ul -> unordered list -->
+        <ul class ="nav-links">
+          <!-- li -> list item -->
+          <li>
+            <!-- a is for hyperlink and is know as anchor-->
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Awards</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <!-- END OF UL-->
+        <!--This is the beginning toogle sign code-->
+        <div class = "toggle_btn">
+          <div class = "line1"></div>
+          <div class = "line2"></div>
+          <div class = "line3"></div>
+        </div>
 
-					<li class="nav-item">
-						<a href="#" class="nav-link">
-							Blogs
-						</a>
-					</li>
-
-					<li class="nav-item">
-						<a href=# class="nav-link">
-							Contact
-						</a>
-					</li>
-				</ul>
-			</div>
-
-		</nav>
-		<p id ="text">
-			<img src="img/gunvirPIC.JPG" width=300px class="imgGleft">
-			Hi, I am Gunvir Dhesi and I am currently a Grade 10 student at Chingouscy Secondary School. 
-			Since a young age I have been fasinated with computers and electroics in general. In Grade 
-			4/5 I was introduced to coding becuase of a game called <a id="link" href="https://agar.io/#ffa">Agar.io.</a> I started using a chrome extension 
-			"Temper Monkey" to start making small game changes, little did I know this was going to 
-			be the beggining of something big. In Grade 6 I attended a regional program(go to education 
-			for more info) which gave me the chance to work with a lot more computers, I learnt about how
-			 computers function and how the operatiing/bios work. Soon after with the help of my Grade 6 
-			 teacher my class and I were going around our school to download and educate students about 
-			 linux OS. 
-		</p>
-
-		<p id="text">
-			<img src="img/gunvirPIC2.JPG" width=300px class="imgGright">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis repellat enim voluptas nisi blanditiis exercitationem magnam deserunt labore sint, qui voluptatem natus hic, impedit recusandae nostrum id vel aut soluta?
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, reiciendis amet? Ratione beatae culpa eveniet! Exercitationem optio, provident ut sequi vel sit perferendis. Reiciendis, explicabo provident quidem quasi magni nobis!
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis beatae, ipsa doloribus ea nemo fuga eveniet soluta natus neque earum odio amet asperiores est explicabo labore excepturi mollitia possimus cum.
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odit, voluptatem perspiciatis provident doloribus iusto. Incidunt corporis fugit, nesciunt a odio odit veniam repellat quidem doloribus, consequatur unde iure nihil.
-		</p>
-
-		<p id="text" style="text-align: center;">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis repellat enim voluptas nisi blanditiis exercitationem magnam deserunt labore sint, qui voluptatem natus hic, impedit recusandae nostrum id vel aut soluta?
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, reiciendis amet? Ratione beatae culpa eveniet! Exercitationem optio, provident ut sequi vel sit perferendis. Reiciendis, explicabo provident quidem quasi magni nobis!
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis beatae, ipsa doloribus ea nemo fuga eveniet soluta natus neque earum odio amet asperiores est explicabo labore excepturi mollitia possimus cum.
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odit, voluptatem perspiciatis provident doloribus iusto. Incidunt corporis fugit, nesciunt a odio odit veniam repellat quidem doloribus, consequatur unde iure nihil.
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis repellat enim voluptas nisi blanditiis exercitationem magnam deserunt labore sint, qui voluptatem natus hic, impedit recusandae nostrum id vel aut soluta?
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-		</p>
-
-
-
-
-		<input type="text" placeholder="Search More About Me Here" class="txtInput">
-		<button class="searchBtn"> SEARCH </button>
-	</body>
-
-
+        <!--This is the ending toogle sign code-->
+    </nav>
+  </body>
 </html>

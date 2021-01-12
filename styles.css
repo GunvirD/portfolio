@@ -1,72 +1,136 @@
-.imgGleft {
-  margin-right: 10px;
-  margin-bottom: 20px;
-  float: left;
+*
+{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
-.imgGright {
-  margin-right: 10px;
-  margin-bottom: 20px;
-  float: right;
+nav
+{
+  /* This will make everything go beside each other*/
+  display: flex;
+
+  /* This will space the navbar content to the edges*/
+  justify-content: space-around;
+
+  /*This Vertically aligns the navbar's content*/
+  align-items:center;
+
+  /* This will set the minimum height of the navbar, for example if I added a background this wouldd be very useful*/
+  min-height: 70px;
+
+  /*This code below is setting the font using Google Fonts*/
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #5D4954;
+}
+.logo
+{
+  color: #f0f0f0;
+  /*we can change the whole text to upper case using text-transform: uppercase;*/
+
+  letter-spacing: 2px;
+  font-size: 20px;
 }
 
-body {
-  font-family: Verdana,Arial,sans-serif;
+.nav-links
+{
+  /* This will make the text appear beside each other */
+  display: flex;
+
+  /*This line of code spaced out the text with the extra space*/
+  justify-content: space-around;
+  /* This will give the text a 40% space on the right side to spread out the text. */
+  width: 40%;
 }
 
-#text {
-  color: #6c757d;
-  margin: 30px;
-  padding: 10px;
-  background-color: #343a40;
-  text-align: left;
-  height: 220px;
+/* The code below gets any a tag the child of nav links class and will apply the effects to it */
+.nav-links a{
+  color: #f0f0f0;
+
+  /* The code below got rid of the underlined word/text*/
+  text-decoration: none;
+
+  /* Gives the space between the chacaters in a word*/
+  letter-spacing: 2px;
+
+  font-weight: bold;
+  font-size: 16px;
 }
 
-#text:hover {
-  color: white;
-  margin: 30px;
-  padding: 10px;
-  background-color: #343a40;
+
+/* We will use this as the list items make the bullet point symbol ifront of the text */
+.nav-links li
+{
+  /* This will remove the bullet point symbol */
+  list-style: none;
 }
 
-.navbar .navbar-brand {
-  font-size: 30px !important;
+.toggle_btn
+{
+  /*The line of code below will hide or show the element in the html file*/
+  display:none;
 }
 
-.navbar {
-  font-size: 24px !important;
-  opacity: .95;
+.toggle_btn div
+{
+  width:25px;
+  height:3px;
+  background-color:#f0f0f0;
+  margin: 5px;
 }
 
-#link {
-  color: lightblue;
+@media screen and (max-width:1000px)
+{
+  .nav-links
+  {
+    /* This will give the text a 60% space on the right side to spread out the text. */
+    width: 60%;
+  }
 }
+@media screen and (max-width:768px)
+{
+  .nav-links
+  {
+    /*absolute is positioned relative to the nearest postionedd ancestor (instead of positionedd relative to the viewport, like fixed)*/
+    position: absolute;
+    right: 0px;
+    /*This will give us full screen*/
+    height: 800px;
+    /*This will make the text appear right under the nav bar*/
+    top: 8vh;
 
-#link:hover {
-  color: deepskyblue;
-}
+    background-color: #5D4954;
 
-.txtInput {
-  width: 300px;
-  text-align: center;
-  margin-left: 510px;
-  color: #6c757d;
-  background-color: #343a40;
-}
+    /* We are making a flex box*/
+    display: flex;
+    /*We are telling it that we want our items to vertically align*/
+    flex-direction: column;
+    /*We are centering the items horizontally*/
+    align-items: center;
 
-.txtInput:hover {
-  color: lightblue;
-}
+    /* This will change the thiccness of the dropdown menu */
 
-.searchBtn {
-  color: #6c757d;
-  background-color: #343a40;
-  -webkit-margin-after: 50%;
-          margin-block-end: 50%;
-}
+    width: 50%;
 
-.searchBtn:hover {
-  color: lightblue;
+    /* This will translate the whole drop down menu off the screen to the right*/
+    transform: translateX(100%);
+  }
+  .nav-links li
+  {
+    /* This will set the text opacity to 0 */
+    opacity:0;
+  }
+  body
+  {
+    /* This will make the scrolling bar invisible for the x axis*/
+    overflow-x:hidden;
+  }
+  .toggle_btn
+  {
+    /* block makes the btn visible*/
+    display: block;
+
+    /* This will make the cursor a pointer so it looks like they can click on something*/
+    cursor: pointer;
+  }
 }
-/*# sourceMappingURL=styles.css.map */
